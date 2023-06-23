@@ -21,6 +21,7 @@ docker run -d --name=mongo-commerce -v "$PWD:/app" -p 27017:27017 mongo:5.0
 docker exec -it mongo-commerce bash
 cd app/
 mongorestore -d commerce -c produtos assets/produtos/produtos.bson
+```bash
 
 ### Localmente:
 
@@ -33,6 +34,7 @@ mongorestore -d commerce -c produtos assets/produtos/produtos.bson
 - docker
 
 ## Habilidades
+
 - Alterar documentos utilizando métodos de update com operadores simples;
 - Alterar documentos utilizando operadores complexos e modificadores;
-- Construir queries e expressões complexas utilizando índices textuais e expressões regulares.
+- Construir queries e expressões complexas utilizando índices textuais e expressões regulares;
